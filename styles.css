@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* font-family: 'Red Hat Display', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 83%;
+    height: 572px;
+    background-color: var(--VeryPaleBlue);
+    border-radius: 22px;
+    overflow: hidden;
+    margin: 54px;
+    transform: scale(.9);
+}
+
+.precio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.img-container {
+    border-radius: 10px;
+}
+
+.img-container img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--VeryPaleBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 68%;
+    justify-content: space-around;
+}
+
+.h2-plan {
+    color: var(--DarkBlue);
+}
+
+.p-plan {
+    color: var(--DesaturatedBlue)
+}
+
+.h1-order {
+    font-size: 1.375rem;
+    font-weight: 900;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--DarkBlue);
+}
+
+.p-desc {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--DesaturatedBlue);
+}
+
+.section-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.btn-pay {
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 11px;
+    padding: 15px;
+    margin-top: 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--BrightBlue);
+    filter: drop-shadow(0 8px 6px rgba(7, 23, 255, .245));
+    transition: ease-in-out .8s;
+    width: 90%;
+}
+
+.btn-pay:hover {
+    background-color: hsl(245, 76%, 62%);
+    opacity: 1;
+    transition: ease-in-out .8s;
+}
+
+.cancel-order {
+    color: var(--DesaturatedBlue);
+    transition: ease-in .5s;
+    cursor: pointer;
+    margin-top: 35px;
+    font-weight: 800;
+    transition: ease-in .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancel-order:hover {
+    color: var(--DarkBlue);
+    transition: ease-in.5s;
+    cursor: pointer;
+}
+
+.change {
+    font-weight: 900;
+    font-size: .95rem;
+    color: var(--BrightBlue);
+    position: relative;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        height: 745px;
+        width: 430px;
+    }
+}
